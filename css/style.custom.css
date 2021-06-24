@@ -457,7 +457,7 @@ SIDEBAR + RIGHT COLUMN
   margin-top: 10px;
 }
 .small-navbar-heading a {
-  color: #000;
+  color: var(--primary);
   text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -465,7 +465,7 @@ SIDEBAR + RIGHT COLUMN
 }
 .small-navbar-heading a:hover {
   border-bottom: dotted 1px var(--secondary);
-  color: #000;
+  color: var(--textWhite);
   text-decoration: none;
 }
 /*
@@ -914,6 +914,11 @@ a:active {
 .box-centered{
   margin:0 auto;
 }
+button.linkbtn{
+  background:none;
+  border:none;
+  display: block;
+}
 
 .box-masonry .box-masonry-hover-text-header {
   position: absolute;
@@ -926,6 +931,7 @@ a:active {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   color: var(--textGrey);
+  text-align: left;
 }
 .box-masonry .box-masonry-hover-text-header p {
   font-size: 14px;
