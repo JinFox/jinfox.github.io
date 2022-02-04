@@ -30,6 +30,37 @@ body {
 header {
   z-index: 1000;
 }
+
+.text {
+  color:#fdf9f3
+ }
+ .accent1 {
+  color:#ff6188;
+ }
+ .accent4 {
+  color:#a9dc76
+ }
+ .accent3 {
+  color:#ffd866
+ }
+ .accent2 {
+  color:#fc9867
+ }
+ .accent6 {
+  color:#ab9df2
+ }
+ .accent5 {
+  color:#78dce8;
+ }
+ 
+#nerdContainer pre { background-color: #2c292d; outline: 1px solid #ccc; padding: 5px; margin: 5px; color: #ab9df2; }
+#nerdContainer .string { color: #ff6188; }
+#nerdContainer .number { color: #ab9df2; }
+#nerdContainer .boolean { color: #a9dc76; }
+#nerdContainer .null { color: #a9dc76; }
+#nerdContainer .key { color: #78dce8; }
+
+
 section {
   position: relative;
   padding-top: 90px;
@@ -430,6 +461,7 @@ SIDEBAR + RIGHT COLUMN
 .content-column-content ul li {
   list-style-type: none;
 }
+
 .content-column-content ul li:before {
   font-family: 'FontAwesome';
   content: '\f105';
