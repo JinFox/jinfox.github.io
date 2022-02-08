@@ -1,104 +1,117 @@
 
 // window.jsPDF = window.jspdf.jsPDF;
-
-$('.printToPdf').click(function (e) {
-    
-   // var printDoc = new jsPDF();
-    $(".printDark").css({ 'color': 'black' });
-    var element = $('#pdf').html();
-    // printDoc.
-    // printDoc.html(test, 10, 10, {'width': 180});
-    // printDoc.autoPrint();
-    // printDoc.output("dataurlnewwindow"); // this opens a new popup,  after this the PDF opens the print window view but there are browser inconsistencies with how this is handled
-
-    // This will implicitly create the canvas and PDF objects before saving.
-    //$(element).find(".printDark").css({ 'color': 'red', 'font-size': '70%' });
-    var opt = {
-        margin:       1,
-        filename:     'JoaquimRenardResume.pdf',
-        image:        { type: 'jpeg', quality: 0.98 },
-        html2canvas:  { scale: 1 },
-        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-      };
-      
-    var worker = html2pdf().set(opt).from(element).save();
-    //$(".printDark").removeAttr("style");
-});
-
-$('.printFriendly').click(function (e) {
-   $("#sidebar").hide();
-   $(".small-navbar").remove();
-   $(".printFriendly").hide();
-   $(".nerdMode").hide();
-   $(".white-background").css({ 'width': '100%' });
- });
- $('.nerdMode').click(function (e) {
-    $('.nerdMode').button("toggle");
-    $("#jsonContainer").toggle();
-    $("#nerdContainer").toggle();
-  });
+var nerdMode = false;
 
 var resume = [{
     "title": "Career",
-    "list": [{
-            "title": "WarDucks - Lead UI Developer",
-            "duration": "May 2019 – Present",
-            "list": [
-                "Conceived the technical architecture of the UI.",
+    "hidden":false,
+    "entryList": [{
+           "title": "Lead UI Developer",
+           "company":"WarDucks",
+           "duration": "May 2021 – Present",
+           "hidden":false,
+           "list": [
                 "Built up the technology stack using a WPF (Xaml/C#) framework (Noesis).",
-                "Organized and gave training with the development team.",
+                "Conceived the technical architecture of the UI.",
+                "Integrating various game features on the client (Unity/C#).",
                 "Lead the UI mock-up and integration effort on the project (assigning tasks and integration).",
-                "Integrating various game features on the client (Unity/C#)."
+                "Organized and gave training with the development team.",
             ]
         },
         {
-            "title": "PayPal – Global Technical Support Engineer",
+            "title": "Unity C# Developer - UI Specialist",
+            "company":"WarDucks",
+            "duration": "May 2019 – May 2021",
+            "hidden":false,
+            "list": [
+                "Responsible of game UI integration and architecture.",
+                "Client side Game developer.",
+             ]
+         },
+        {
+            "title": "Global Technical Support Engineer",
+            "company":"PayPal",
             "duration": "November 2015 – May 2019",
+           "hidden":false,
             "list": [
                 "Developing internal tools to support teams various tasks (JS, C#, etc.)",
-                "Supporting PayPal integrations (new integration, third-party solution, PayPal SDKs, REST APIs, Networking).",
-                "Programmation and debugging in JavaScript, PHP, C# and multiple languages, APIs and SDKs.",
+                "Supporting PayPal integrations (PayPal SDKs, REST APIs, Networking, C#, Javascript, PHP)",
                 "Troubleshooting (Investigate, track and escalate issue to product teams).",
-                "High Revenue issue handling and bug management."
+                "High Revenue issue handling and bug management.",
             ]
         },
         {
-            "title": "ManaCube – Unity Game developer (Client and Server side)",
+            "title": "Unity Game developer (Client and Server side)",
+            "company":"ManaCube",
             "duration": "August 2014 – September 2015",
+            "hidden":false,
             "list": [
                 "Participated to the development of Dungeon Monsters™ on iOS and Android.",
                 "Responsible of the game’s UI and UX (animations, navigation).",
                 "Developed a wide set of core features of the game.",
                 "Implemented several main game mechanics.",
-                "Conceived and developed the game’s server."
+                "Conceived and developed the game’s server.",
             ]
         },
-        {
-            "title": "Securiloc Locster - Android developer",
-            "hidden":true,
-            "duration": "June - August 2013",
-            "list": [
-                "Refactoring an existing Android application (geolocalisation)."
-            ]
-        },
+        // {
+        //     "title": "Android developer",
+        //     "company":"Securiloc Locster",
+        //     "duration": "June - August 2013",
+        //    "hidden":true,
+        //     "list": [
+        //         "Refactoring an existing Android application (tag geolocalisation)."
+        //     ]
+        // },
+        // {
+
+        //     "title": "Web Developer",
+        //     "company":"AAM Communication",
+        //     "hidden":false,
+        //     "duration": "July - December 2011 (Full time intership) - January - April 2013 (Part time)",
+        //     "list": [
+        //         "Several Website Integration (CakePHP, Drupal and Javascript.)",
+        //     ]
+        // },
         {
 
-            "title": "AAM Communication - Web Developer",
-            "duration": "July - December 2011 (Full time intership) - January - April 2013 (Part time)",
-            "list": [
-                "Development of several websites for clients using cakePHP, Drupal and Javascript."
+            "title": "Other",
+            "hidden":false,
+            // "duration": "July - December 2011 (Full time intership) - January - April 2013 (Part time)",
+            "entryList": [
+                {
+                    "title": "Android developer (Geolocalization)",
+                    "company":"Securiloc Locster",
+                    "duration": "June - August 2013",
+                    "hidden":false,
+                    // "list": [
+                    //     "Refactoring an existing Android application (tag geolocalisation)."
+                    // ]
+                },
+                {
+        
+                    "title": "Web Developer",
+                    "company":"AAM Communication",
+                    "hidden":false,
+                    "duration": "July - December 2011 (Full time intership) - January - April 2013 (Part time)",
+                    // "list": [
+                    //     "Several Website Integration (CakePHP, Drupal and Javascript.)",
+                    // ]
+                },
             ]
         }
+
     ]
 },
 {
     "title": "Skills",
-    "list": [{
+    "hidden":false,
+    "entryList": [{
             "title": "Technical",
             "column": 2,
+            "hidden":false,
             "list": [
                 "Object Oriented, Reactive and Functionnal programming",
-                "C#, C++, C, WPF, Java, JavaScript, NodeJS, Python, PHP, HTML/CSS",
+                "C#, C++, C, WPF, Java, JS, NodeJS, Python, PHP, HTML",
                 "JSON, XML, Database management (mongodb, mySQL, etc)",
                 "Versioning UI/console (Git, SVN, Mercurial), JIRA",
                 "Unity",
@@ -110,10 +123,11 @@ var resume = [{
         {
             "title": "Other skills - Language",
             "column": 2,
+            "hidden":false,
             "list": [
-                "Problem solving and pragmatic thinking, fast learner",
+                "Problem solving, fast learner",
                 "Project management, Agile Method",
-                "Game design and game economy",
+                "Game design and Game economy",
                 "French (Native) and English (fluent)"
             ]
         }
@@ -121,12 +135,14 @@ var resume = [{
 },
 {
     "title": "Education",
-    "list": [{
-            "title": "Master in Computer Sciences – EPITECH (France) - Level 9",
+    "entryList": [{
+            "title": "Master in Computer Sciences – Level 9",
+            "company":"EPITECH",
             "duration": "2010 – 2015",
+            "hidden":false,
             "column": 2,
             "list": [
-                "Software architectures, low level programming Languages",
+                "Software architectures, C, C++",
                 "Programming design patterns",
                 "Game development",
                 "Project Management"
@@ -135,16 +151,18 @@ var resume = [{
         {
             "title": "Business Management/Computing Science – Griffith College Dublin",
             "duration": "2013 – 2014",
+            "hidden":false,
             "column": 2,
             "list": [
                 "Data structure & Algorithms",
                 "Formal Specifications",
-                "Computer's Graphics (Theory of rendering)",
+                "Rendering Theory",
                 "Business Management"
             ]
         },
         {
             "title": "Online courses",
+            "hidden":false,
             "column": 2,
             "list": [
                 "Unity certification (Udemy)",
@@ -156,19 +174,73 @@ var resume = [{
     ]
 },
 {
+    "hidden":false,
     "title": "Hobbies - Interests",
-    "column": 1,
+ //   "column": 1,
     "list": [
         "Game Jams (solo & team): Ludum Dare, Global Game Jam.",
         "Favorite games : Outer Wilds, The Binding of Isaac, The Legend of Zelda, Celeste, Metal Gear Solid",
         "Interest in Sciences and new technologies",
-        "Tabletop Roleplaying and board games"
+        "Tabletop Roleplaying and board games",
+        "Helped in developing company culture through several events (in office and remote gaming events, game clubs, Roleplay)",
     ]
 }
 ];
 
+
+function toggleNerdMode(duration = 200) {
+    nerdMode = nerdMode == true ? false : true;
+    console.log("test " + nerdMode);
+    $('.nerdMode').button("toggle");
+    if (duration > 0){
+        $("#jsonContainer").toggle(duration);
+        $("#nerdContainer").toggle(duration);
+    }
+    else{
+        $("#jsonContainer").toggle();
+        $("#nerdContainer").toggle();
+    }
+}
+
+function setPrintFriendly()
+{
+    $("#sidebar").hide();
+    $(".small-navbar").remove();
+    $(".printFriendly").hide();
+    $(".nerdMode").hide();
+    $(".white-background").css({ 'width': '100%' });
+        
+}
+
+function removeHidden(json)
+{
+    if (Array.isArray(json))
+    {
+        json = json.filter(
+            function(value, index, arr){ 
+                return !isHidden(value);
+            }
+        );
+        json.forEach(element => {
+            delete element.hidden;
+        });
+        for (let i = 0; i < json.length; i++) {
+            json[i] = removeHidden(json[i]);
+        }
+    }
+    else if (json.hasOwnProperty('list')){
+        json.list = removeHidden(json.list);
+    }
+    else if (json.hasOwnProperty('entryList')){
+        json.entryList = removeHidden(json.entryList);
+    }
+    
+    return json;
+}
+
 function syntaxHighlight(json) {
   if (typeof json != 'string') {
+     
        json = JSON.stringify(json, undefined, 2);
   }
   json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -189,42 +261,98 @@ function syntaxHighlight(json) {
   });
 }
 
-function displayList(list, tag, entryLevel){
-    let html = "<ul>";
-    for (let i = 0; i < list.length; i++) {
-        let element = list[i];
-        if (element.hasOwnProperty('list')) {
-            html += displayEntry(element, entryLevel, true);
-        }
-        else { // string
-            html+=`<${tag} class="printDark">${element}</${tag}>`;
-        }
-        
-    }
-    
-    html += "</ul>";
-    return html;
+
+function isHidden(entry){
+    return entry.hasOwnProperty('hidden') && entry.hidden;
 }
 
-function displayEntry(entry, entryLevel, avoidBreaks = false) {
-    let text = "";
-       
-    if (entry.hasOwnProperty('hidden') && entry.hidden){
-        return text;
+function showTitle(entry, entryLevel)
+{
+    if (entry.hasOwnProperty('title') ){
+        let prefix = "";
+        if (entry.hasOwnProperty('company')){
+            prefix = `<span>${entry["company"]}</span> - `;
+        }
+        return `<h${entryLevel} class="printDark">${prefix}${entry.title}</h${entryLevel}>`;
     }
-    
-    if (entry.hasOwnProperty('title')){
-        text += `<h${entryLevel} class="printDark">${entry.title}</h${entryLevel}>`;
-    }    
-    
+    return "";
+}
+
+function displayList(entry, entryLevel){
+    let html = "";
+    let listText = "";
+    if (!entry.hasOwnProperty('entryList')){
+        html += showTitle(entry, entryLevel);
+    }
     if (entry.hasOwnProperty('duration')){
-        text += `<span class="printDark"><em>${entry.duration}</em></span>`;
+        html += `<span class="printDark resumeDuration">${entry.duration}</span>`;
     }
-    if (entry.hasOwnProperty('list')){
-        text += displayList(entry.list, "li", entryLevel + 1);
+    if (entry.hasOwnProperty("column") && entry.column > 1){
+      
+        const half = Math.ceil(entry.list.length / 2);    
+        const topHalf = Math.floor(entry.list.length / 2);
+        const firstHalf = entry.list.slice(0, half);
+        const secondHalf = entry.list.slice(-topHalf);
+        for (let i = 0; i < half; i++) {
+            // html += `<div class="row">`; // row
+            listText +=`<li class="printDark resumeColumn">${firstHalf[i]}</li>`;
+            if (i < secondHalf.length ) {
+                listText +=`<li class="printDark resumeColumn">${secondHalf[i]}</li>`;
+            }
+            // html += `</div>`;
+        }
+        html += `<ul class="resumeColumnContainer">${listText}</ul>`;
+    } else {
+     
+        for (let i = 0; i < entry.list.length; i++) {
+            let element = entry.list[i];
+            listText+=`<li class="printDark col">${element}</li>`;
+        }
+        html += `<ul>${listText}</ul>`;
     }
-    if (avoidBreaks === true) {
-        text = ` <div style="page-break-inside:avoid;">${text}</div>`;
+    return `<div class="resumeSection">${html}</div>`;
+}
+
+function displayEntry(entry, entryLevel, firstIteration) {
+    let text = "";    
+  
+    // sub title 
+    
+  
+    if (entry.hasOwnProperty('entryList')) { // entries(object) list
+        let entryList = entry.entryList;
+        
+        for (let i = 0; i < entryList.length; i++) {
+            let element = entryList[i];
+            
+            if (i === 0) { // helps not separating the title with the first element of a list in a printing scenario
+                let firstEntry = showTitle(entry, entryLevel);
+                
+                firstEntry += displayEntry(element, entryLevel + 1, false);
+                text += `<div class="resumeSection">${firstEntry}</div>`
+            }
+            else {
+                text += displayEntry(element, entryLevel + 1, false);
+            }
+        }
+        
+    } else if (entry.hasOwnProperty('list')){ // text list
+        text += displayList(entry, entryLevel);
+        firstIteration = true;
+    } else
+    {
+        let html = "";
+        if (!entry.hasOwnProperty('entryList')){
+            html += showTitle(entry, entryLevel);
+        }
+        if (entry.hasOwnProperty('duration')){
+            html += `<span class="printDark resumeDuration">${entry.duration}</span>`;
+        }
+        text += `<div class="resumeSection">${html}</div>`;
+    }
+
+    if (!firstIteration){
+        text = `<div class="resumeSection">${text}</div>`;
     }
     return text;
 }
@@ -234,12 +362,29 @@ function generateResumeFromJson(resume)
     let html = "";
     for (let i = 0; i < resume.length; i++) {
         let entry = resume[i];
-        html += displayEntry(entry, 4, false);
+        html += displayEntry(entry, 4, true);
     }
 
     return html;
 }
 
+
+$('.printFriendly').click(function (e) {
+    if (nerdMode === true){
+        toggleNerdMode(0);  
+    } 
+    
+    setPrintFriendly(true);
+    window.print();
+    setTimeout(() => {  window.location.reload(); }, 10); // reload page after print closed to have the nice print layout
+ });
+
+ $('.nerdMode').click(function (e) {
+    toggleNerdMode(200);
+  });
+
+resume = removeHidden(resume);
 $("#nerdContainer").append("<pre>" + syntaxHighlight(resume) + "</pre>").hide();
 $("#jsonContainer").append(generateResumeFromJson(resume) );
+
 

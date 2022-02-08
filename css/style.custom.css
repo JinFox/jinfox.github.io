@@ -1,10 +1,4 @@
-/*
-=========================================
-=========================================
-Startup Template By Bootstrapious.com
-=========================================
-========================================= */
-/* variant 3 - sea */
+
 /*
 =====================
 GENERAL
@@ -21,6 +15,47 @@ GENERAL
   --textWhite:#e5e5e5;
 }
 
+#nerdContainer pre { background-color: #2c292d; outline: 1px solid #ccc; padding: 5px; margin: 5px; color: #ab9df2; }
+#nerdContainer .string { color: #ff6188; }
+#nerdContainer .number { color: #ab9df2; }
+#nerdContainer .boolean { color: #a9dc76; }
+#nerdContainer .null { color: #a9dc76; }
+#nerdContainer .key { color: #78dce8; }
+
+.resumeDuration {
+  font-style: italic;
+  font-size: 0.95em;
+  margin-top: -20;
+  margin-left: 20px;
+  color: var(--textWhite);
+}
+.resumeColumn {
+  width:50%;
+  float:left;  
+}
+.resumeSection::before, .resumeSubSection::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.resumeSection, .resumeSubSection{
+  page-break-inside:avoid
+}
+.resumeSection h4, .resumeSection h3{
+  border-bottom: 2px solid var(--black);
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.croppedImage img {
+  object-fit: cover;
+  /* clip-path: circle(); */
+  /* border-radius: 50% 5% 50% 5%; */
+  border-radius: 3%;
+  margin: 10px 00px 20px 0px;
+  height: 340px;
+  object-position: center 10%;
+}
 
 html,
 body {
@@ -30,35 +65,6 @@ body {
 header {
   z-index: 1000;
 }
-
-.text {
-  color:#fdf9f3
- }
- .accent1 {
-  color:#ff6188;
- }
- .accent4 {
-  color:#a9dc76
- }
- .accent3 {
-  color:#ffd866
- }
- .accent2 {
-  color:#fc9867
- }
- .accent6 {
-  color:#ab9df2
- }
- .accent5 {
-  color:#78dce8;
- }
- 
-#nerdContainer pre { background-color: #2c292d; outline: 1px solid #ccc; padding: 5px; margin: 5px; color: #ab9df2; }
-#nerdContainer .string { color: #ff6188; }
-#nerdContainer .number { color: #ab9df2; }
-#nerdContainer .boolean { color: #a9dc76; }
-#nerdContainer .null { color: #a9dc76; }
-#nerdContainer .key { color: #78dce8; }
 
 
 section {
@@ -2045,7 +2051,8 @@ h6,
 .h6 {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  line-height: 1.2;
+  /* line-height: 1.2; */
+  line-height: 1;
   color: var(--primary);
 }
 h1,
@@ -2065,6 +2072,7 @@ h4,
 .h4 {
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 5px;
 }
 h5,
 .h5 {
@@ -2075,6 +2083,7 @@ h6,
 .h6 {
   font-size: 14px;
   font-weight: 700;
+  
 }
 h1,
 .h1,
