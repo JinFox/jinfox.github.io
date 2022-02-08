@@ -295,7 +295,7 @@ function displayList(entry, entryLevel){
         const secondHalf = entry.list.slice(-topHalf);
         for (let i = 0; i < half; i++) {
             // html += `<div class="row">`; // row
-            listText +=`<li class="printDark resumeColumn">${firstHalf[i]}</li>`;
+            listText +=`<li class="printDark resumeColumn columnLeft">${firstHalf[i]}</li>`;
             if (i < secondHalf.length ) {
                 listText +=`<li class="printDark resumeColumn">${secondHalf[i]}</li>`;
             }

@@ -33,6 +33,9 @@ GENERAL
   width:50%;
   float:left;  
 }
+.columnLeft {
+  padding-right: 20px;
+}
 .resumeSection::before, .resumeSubSection::before {
   content: "";
   clear: both;
