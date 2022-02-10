@@ -29,17 +29,26 @@ GENERAL
   margin-left: 20px;
   color: var(--textWhite);
 }
+.resumeColumnContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  list-style-position: inside;
+  list-style-type: none;
+}
 .resumeColumn {
-  width:50%;
-  float:left;  
+  
+  
 }
 .columnLeft {
   padding-right: 20px;
 }
+.columnRight{
+  
+}
 .resumeSection::before, .resumeSubSection::before {
-  content: "";
+  /* content: "";
   clear: both;
-  display: table;
+  display: table; */
 }
 
 .resumeSection, .resumeSubSection{
@@ -50,6 +59,7 @@ GENERAL
   margin-bottom: 0px;
   margin-top: 10px;
 }
+
 .croppedImage img {
   object-fit: cover;
   /* clip-path: circle(); */

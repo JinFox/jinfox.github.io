@@ -111,12 +111,12 @@ var resume = [{
             "hidden":false,
             "list": [
                 "Object Oriented, Reactive and Functionnal programming",
-                "C#, C++, C, WPF, Java, JS, NodeJS, Python, PHP, HTML",
-                "JSON, XML, Database management (mongodb, mySQL, etc)",
-                "Versioning UI/console (Git, SVN, Mercurial), JIRA",
                 "Unity",
+                "JSON, XML, Database management (Mongodb, mySQL..)",
+                "Windows, Unix, MacOS, bash",
+                "C#, C++, C, WPF, Java, JS, NodeJS, Python, PHP, HTML",
                 "Network, REST APIs, Multi-Threading",
-                "Unix, Windows, MacOS, bash",
+                "Versioning UI/console (Git, SVN, Mercurial), JIRA",
                 "Photoshop & Blender (Basics)"
             ]
         },
@@ -297,7 +297,7 @@ function displayList(entry, entryLevel){
             // html += `<div class="row">`; // row
             listText +=`<li class="printDark resumeColumn columnLeft">${firstHalf[i]}</li>`;
             if (i < secondHalf.length ) {
-                listText +=`<li class="printDark resumeColumn">${secondHalf[i]}</li>`;
+                listText +=`<li class="printDark resumeColumn columnRight">${secondHalf[i]}</li>`;
             }
             // html += `</div>`;
         }
