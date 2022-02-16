@@ -1,7 +1,6 @@
 
-// window.jsPDF = window.jspdf.jsPDF;
-var nerdMode = false;
 
+var nerdMode = false;
 var resume = [{
     "title": "Career",
     "hidden":false,
@@ -383,8 +382,13 @@ $('.printFriendly').click(function (e) {
     toggleNerdMode(200);
   });
 
-resume = removeHidden(resume);
-$("#nerdContainer").append("<pre>" + syntaxHighlight(resume) + "</pre>").hide();
-$("#jsonContainer").append(generateResumeFromJson(resume) );
+  $( document ).ready(function() {
+    resume = removeHidden(resume);
+    $("#nerdContainer").append("<pre>" + syntaxHighlight(resume) + "</pre>").hide();
+    $("#jsonContainer").append(generateResumeFromJson(resume) );
+    $(".stamp").each(function() {
+        $( this ).fitText();
+      });
+  });
 
 
