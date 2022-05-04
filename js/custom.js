@@ -5,7 +5,7 @@ var resume = [{
     "title": "Career",
     "hidden":false,
     "entryList": [{
-           "title": "Lead UI Developer",
+           "title": "Lead UI & Full Stack Developer",
            "company":"WarDucks",
            "duration": "May 2021 – Present",
            "hidden":false,
@@ -24,7 +24,7 @@ var resume = [{
             "hidden":false,
             "list": [
                 "Responsible of game UI integration and architecture.",
-                "Client side Game developer.",
+                "Client-side Game developer.",
              ]
          },
         {
@@ -33,8 +33,8 @@ var resume = [{
             "duration": "November 2015 – May 2019",
            "hidden":false,
             "list": [
-                "Developing internal tools to support teams various tasks (JS, C#, etc.)",
-                "Supporting PayPal integrations (PayPal SDKs, REST APIs, Networking, C#, Javascript, PHP)",
+                "Developing internal tools (JS, C#, etc.)",
+                "Supporting integrations (PayPal SDKs, REST APIs, Networking, C#, Javascript, PHP)",
                 "Troubleshooting (Investigate, track and escalate issue to product teams).",
                 "High Revenue issue handling and bug management.",
             ]
