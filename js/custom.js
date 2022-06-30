@@ -10,10 +10,10 @@ var resume = [{
            "duration": "May 2021 – Present",
            "hidden":false,
            "list": [
-                "Built up the technology stack using a WPF (Xaml/C#) framework (Noesis).",
-                "Conceived the technical architecture of the UI.",
-                "Integrating various game features on the client (Unity/C#).",
-                "Lead the UI mock-up and integration effort on the project (assigning tasks and integration).",
+               "Built up the technology stack using Noesis (XAML/C# WPF framework).",
+               "Conceived the technical architecture of the UI.",
+               "Integrating and specing various game features on the client and server (Unity, C#).",
+               "Lead the UI integration on the project (assigning tasks and integration).",
                 "Organized and gave training with the development team.",
             ]
         },
@@ -34,8 +34,7 @@ var resume = [{
            "hidden":false,
             "list": [
                 "Developing internal tools (JS, C#, etc.)",
-                "Supporting integrations (PayPal SDKs, REST APIs, Networking, C#, Javascript, PHP)",
-                "Troubleshooting (Investigate, track and escalate issue to product teams).",
+                "Supporting and troubleshooting integrations (SDKs, REST APIs, Networking, C#, Javascript, PHP)",
                 "High Revenue issue handling and bug management.",
             ]
         },
@@ -71,33 +70,33 @@ var resume = [{
         //         "Several Website Integration (CakePHP, Drupal and Javascript.)",
         //     ]
         // },
-        {
+        // {
 
-            "title": "Other",
-            "hidden":false,
-            // "duration": "July - December 2011 (Full time intership) - January - April 2013 (Part time)",
-            "entryList": [
-                {
-                    "title": "Android developer (Geolocalization)",
-                    "company":"Securiloc Locster",
-                    "duration": "June - August 2013",
-                    "hidden":false,
-                    // "list": [
-                    //     "Refactoring an existing Android application (tag geolocalisation)."
-                    // ]
-                },
-                {
+        //     "title": "Other",
+        //     "hidden":false,
+        //     // "duration": "July - December 2011 (Full time intership) - January - April 2013 (Part time)",
+        //     "entryList": [
+        //         {
+        //             "title": "Android developer (Geolocalization)",
+        //             "company":"Securiloc Locster",
+        //             "duration": "June - August 2013",
+        //             "hidden":false,
+        //             // "list": [
+        //             //     "Refactoring an existing Android application (tag geolocalisation)."
+        //             // ]
+        //         },
+        //         {
         
-                    "title": "Web Developer",
-                    "company":"AAM Communication",
-                    "hidden":false,
-                    "duration": "July - December 2011 (Full time intership) - January - April 2013 (Part time)",
-                    // "list": [
-                    //     "Several Website Integration (CakePHP, Drupal and Javascript.)",
-                    // ]
-                },
-            ]
-        }
+        //             "title": "Web Developer",
+        //             "company":"AAM Communication",
+        //             "hidden":false,
+        //             "duration": "July - December 2011 (Full time intership) - January - April 2013 (Part time)",
+        //             // "list": [
+        //             //     "Several Website Integration (CakePHP, Drupal and Javascript.)",
+        //             // ]
+        //         },
+        //     ]
+        // }
 
     ]
 },
@@ -114,7 +113,7 @@ var resume = [{
                 "JSON, XML, Database management (Mongodb, mySQL..)",
                 "Windows, Unix, MacOS, bash",
                 "C#, C++, C, WPF, Java, JS, NodeJS, Python, PHP, HTML",
-                "Network, REST APIs, Multi-Threading",
+                "Network, Multi-Threading, Design patterns",
                 "Versioning UI/console (Git, SVN, Mercurial), JIRA",
                 "Photoshop & Blender (Basics)"
             ]
