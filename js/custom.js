@@ -10,7 +10,7 @@ var resume = [{
            "duration": "May 2021 – Present",
            "hidden":false,
            "list": [
-               "Built up the technology stack using Noesis (XAML/C# WPF framework).",
+               "Built up the technology stack using Noesis (WPF/C# framework).",
                "Conceived the technical architecture of the UI.",
                "Integrating and specing various game features on the client and server (Unity, C#).",
                "Lead the UI integration on the project (assigning tasks and integration).",
@@ -112,7 +112,7 @@ var resume = [{
                 "Unity",
                 "JSON, XML, Database management (Mongodb, mySQL..)",
                 "Windows, Unix, MacOS, bash",
-                "C#, C++, C, WPF, Java, JS, NodeJS, Python, PHP, HTML",
+                "C#, C++, C, WPF, Java, JS, Python, PHP",
                 "Network, Multi-Threading, Design patterns",
                 "Versioning UI/console (Git, SVN, Mercurial), JIRA",
                 "Photoshop & Blender (Basics)"
@@ -125,7 +125,7 @@ var resume = [{
             "list": [
                 "Problem solving, fast learner",
                 "Project management, Agile Method",
-                "Game design and Game economy",
+                "Game Design and Game economy",
                 "French (Native) and English (fluent)"
             ]
         }
