@@ -5,16 +5,15 @@ var resume = [{
     "title": "Career",
     "hidden":false,
     "entryList": [{
-           "title": "Lead UI & Full Stack Developer",
+           "title": "Lead UI Game Developer",
            "company":"WarDucks",
            "duration": "May 2021 – Present",
            "hidden":false,
            "list": [
-               "Built up the technology stack using Noesis (WPF/C# framework).",
-               "Conceived the technical architecture of the UI.",
-               "Integrating and specing various game features on the client and server (Unity, C#).",
-               "Lead the UI integration on the project (assigning tasks and integration).",
-                "Organized and gave training with the development team.",
+                "Writing specifications and integration of various game features on the client and server (Unity, C#).",
+                "Lead the UI Architecture and integrations on the project (assigning tasks and integration).",
+                "Built up the technology stack using Noesis (WPF/C# framework).",
+                "Organized training with the development team.",
             ]
         },
         {
@@ -23,8 +22,8 @@ var resume = [{
             "duration": "May 2019 – May 2021",
             "hidden":false,
             "list": [
-                "Responsible of game UI integration and architecture.",
-                "Client-side Game developer.",
+                "UI integration and architecture.",
+                "Client-side and full stack Game developer.",
              ]
          },
         {
@@ -34,7 +33,7 @@ var resume = [{
            "hidden":false,
             "list": [
                 "Developing internal tools (JS, C#, etc.)",
-                "Supporting and troubleshooting integrations (SDKs, REST APIs, Networking, C#, Javascript, PHP)",
+                "Supporting and troubleshooting integrations (SDKs, REST APIs)",
                 "High Revenue issue handling and bug management.",
             ]
         },
@@ -44,11 +43,20 @@ var resume = [{
             "duration": "August 2014 – September 2015",
             "hidden":false,
             "list": [
-                "Participated to the development of Dungeon Monsters™ on iOS and Android.",
+                "Development of Dungeon Monsters on iOS and Android.",
                 "Responsible of the game’s UI and UX (animations, navigation).",
                 "Developed a wide set of core features of the game.",
-                "Implemented several main game mechanics.",
                 "Conceived and developed the game’s server.",
+            ]
+        },
+        {
+            "title": "Other",
+            // "company":"",
+            "duration": "August 2014 – September 2015",
+            "hidden":false,
+            "list": [
+                "Securiloc Locster - Android Developer Internship - Geolocalisation App",
+                "AAM Communication - Web development",
             ]
         },
         // {
@@ -112,8 +120,8 @@ var resume = [{
                 "Unity",
                 "JSON, XML, Database management (Mongodb, mySQL..)",
                 "Windows, Unix, MacOS, bash",
-                "C#, C++, C, WPF, Java, JS, Python, PHP",
-                "Network, Multi-Threading, Design patterns",
+                "C#, C++, C, WPF, Python, Java, JS",
+                "Network, Asynchronous, Design patterns, SOLID principle",
                 "Versioning UI/console (Git, SVN, Mercurial), JIRA",
                 "Photoshop & Blender (Basics)"
             ]
@@ -124,8 +132,8 @@ var resume = [{
             "hidden":false,
             "list": [
                 "Problem solving, fast learner",
-                "Project management, Agile Method",
-                "Game Design and Game economy",
+                "Project management, Agile/Scrum Method",
+                "UX Practice, Game Design, Game economy",
                 "French (Native) and English (fluent)"
             ]
         }
@@ -147,14 +155,12 @@ var resume = [{
             ]
         },
         {
-            "title": "Business Management/Computing Science – Griffith College Dublin",
+            "title": "Griffith College Dublin - (Exchange program)",
             "duration": "2013 – 2014",
             "hidden":false,
             "column": 2,
             "list": [
-                "Data structure & Algorithms",
-                "Formal Specifications",
-                "Rendering Theory",
+                "Computing Science",
                 "Business Management"
             ]
         },
@@ -177,10 +183,10 @@ var resume = [{
  //   "column": 1,
     "list": [
         "Game Jams (solo & team): Ludum Dare, Global Game Jam.",
-        "Favorite games : Outer Wilds, The Binding of Isaac, The Legend of Zelda, Celeste, Metal Gear Solid",
-        "Interest in Sciences and new technologies",
-        "Tabletop Roleplaying and board games",
-        "Helped in developing company culture through several events (in office and remote gaming events, game clubs, Roleplay)",
+        "Favorite games : Outer Wilds, The Binding of Isaac, The Legend of Zelda, Celeste, Metal Gear Solid, Rocket league.",
+        "Interest in Sciences and curiosity for many topics.",
+        "Tabletop Roleplaying and board games.",
+        "Helped in developing company culture through several events (in office and remote gaming events, game clubs, Roleplay).",
     ]
 }
 ];
