@@ -7,25 +7,26 @@ var resume = [{
     "entryList": [{
            "title": "Lead UI Game Developer",
            "company":"WarDucks",
-           "duration": "May 2021 – Present",
+           "duration": "May 2019 – Present",
            "hidden":false,
            "list": [
                 "Writing specifications and integration of various game features on the client and server (Unity, C#).",
                 "Lead the UI Architecture and integrations on the project (assigning tasks and integration).",
                 "Built up the technology stack using Noesis (WPF/C# framework).",
                 "Organized training with the development team.",
+                "Integration of Client, UI and server features",
             ]
         },
-        {
-            "title": "Unity C# Developer - UI Specialist",
-            "company":"WarDucks",
-            "duration": "May 2019 – May 2021",
-            "hidden":false,
-            "list": [
-                "UI integration and architecture.",
-                "Client-side and full stack Game developer.",
-             ]
-         },
+        // {
+        //     "title": "Unity C# Developer - UI Specialist",
+        //     "company":"WarDucks",
+        //     "duration": "May 2019 – May 2021",
+        //     "hidden":false,
+        //     "list": [
+        //         "UI integration and architecture.",
+        //         "Client-side and full stack Game developer.",
+        //      ]
+        //  },
         {
             "title": "Global Technical Support Engineer",
             "company":"PayPal",
@@ -169,9 +170,8 @@ var resume = [{
             "hidden":false,
             "column": 2,
             "list": [
-                "Unity certification (Udemy)",
-                "Shader development, CGProgram (Udemy)",
-                "Python (Udemy)",
+                // "Unity certification, Python (Udemy)",
+                "Shader development, CGProgram (Udemy)",        
                 "Game Design (linkedin Learning)"
             ]
         }
@@ -183,7 +183,7 @@ var resume = [{
  //   "column": 1,
     "list": [
         "Game Jams (solo & team): Ludum Dare, Global Game Jam.",
-        "Favorite games : Outer Wilds, The Binding of Isaac, The Legend of Zelda, Celeste, Metal Gear Solid, Rocket league.",
+        "Favorite games : Outer Wilds, The Binding of Isaac, The Legend of Zelda, Celeste, Metal Gear Solid, Rocket league, Bioshock, Overwatch, Apex Legends.",
         "Interest in Sciences and curiosity for many topics.",
         "Tabletop Roleplaying and board games.",
         "Helped in developing company culture through several events (in office and remote gaming events, game clubs, Roleplay).",
