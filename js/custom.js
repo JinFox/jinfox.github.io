@@ -4,29 +4,29 @@ var nerdMode = false;
 var resume = [{
     "title": "Career",
     "hidden":false,
-    "entryList": [{
+    "entryList": [
+        {
+            "title": "Lead Game Developer",
+            "company":"WarDucks",
+            "duration": "June  2023– Present",
+            "hidden":false,
+            "list": [
+                "Participated in integrating game core mechanics",
+                "Sprint planning, prioritization, Communication with internal and external team.",
+             ]
+         },
+        {
            "title": "Lead UI Game Developer",
            "company":"WarDucks",
-           "duration": "May 2019 – Present",
+           "duration": "May 2019 – June 2023",
            "hidden":false,
            "list": [
-                "Writing specifications and integration of various game features on the client and server (Unity, C#).",
+                "Writing specifications and integration of game features (client and server, Unity).",
                 "Lead the UI Architecture and integrations on the project (assigning tasks and integration).",
-                "Built up the technology stack using Noesis (WPF/C# framework).",
-                "Organized training with the development team.",
-                "Integration of Client, UI and server features",
+                "Built up the technology stack using Noesis (WPF/C# framework), Organized training ",
+                "Lead prototyping and design of the game Wizard Merge."
             ]
         },
-        // {
-        //     "title": "Unity C# Developer - UI Specialist",
-        //     "company":"WarDucks",
-        //     "duration": "May 2019 – May 2021",
-        //     "hidden":false,
-        //     "list": [
-        //         "UI integration and architecture.",
-        //         "Client-side and full stack Game developer.",
-        //      ]
-        //  },
         {
             "title": "Global Technical Support Engineer",
             "company":"PayPal",
@@ -34,7 +34,7 @@ var resume = [{
            "hidden":false,
             "list": [
                 "Developing internal tools (JS, C#, etc.)",
-                "Supporting and troubleshooting integrations (SDKs, REST APIs)",
+                "Troubleshooting integrations (SDKs, REST APIs, etc.)",
                 "High Revenue issue handling and bug management.",
             ]
         },
@@ -45,14 +45,12 @@ var resume = [{
             "hidden":false,
             "list": [
                 "Development of Dungeon Monsters on iOS and Android.",
-                "Responsible of the game’s UI and UX (animations, navigation).",
-                "Developed a wide set of core features of the game.",
+                "Implementing UI/UX and client mechanics.",
                 "Conceived and developed the game’s server.",
             ]
         },
         {
             "title": "Other",
-            // "company":"",
             "duration": "August 2014 – September 2015",
             "hidden":false,
             "list": [
@@ -60,53 +58,6 @@ var resume = [{
                 "AAM Communication - Web development",
             ]
         },
-        // {
-        //     "title": "Android developer",
-        //     "company":"Securiloc Locster",
-        //     "duration": "June - August 2013",
-        //    "hidden":true,
-        //     "list": [
-        //         "Refactoring an existing Android application (tag geolocalisation)."
-        //     ]
-        // },
-        // {
-
-        //     "title": "Web Developer",
-        //     "company":"AAM Communication",
-        //     "hidden":false,
-        //     "duration": "July - December 2011 (Full time intership) - January - April 2013 (Part time)",
-        //     "list": [
-        //         "Several Website Integration (CakePHP, Drupal and Javascript.)",
-        //     ]
-        // },
-        // {
-
-        //     "title": "Other",
-        //     "hidden":false,
-        //     // "duration": "July - December 2011 (Full time intership) - January - April 2013 (Part time)",
-        //     "entryList": [
-        //         {
-        //             "title": "Android developer (Geolocalization)",
-        //             "company":"Securiloc Locster",
-        //             "duration": "June - August 2013",
-        //             "hidden":false,
-        //             // "list": [
-        //             //     "Refactoring an existing Android application (tag geolocalisation)."
-        //             // ]
-        //         },
-        //         {
-        
-        //             "title": "Web Developer",
-        //             "company":"AAM Communication",
-        //             "hidden":false,
-        //             "duration": "July - December 2011 (Full time intership) - January - April 2013 (Part time)",
-        //             // "list": [
-        //             //     "Several Website Integration (CakePHP, Drupal and Javascript.)",
-        //             // ]
-        //         },
-        //     ]
-        // }
-
     ]
 },
 {
@@ -117,14 +68,15 @@ var resume = [{
             "column": 2,
             "hidden":false,
             "list": [
-                "Object Oriented, Reactive and Functionnal programming",
-                "Unity",
-                "JSON, XML, Database management (Mongodb, mySQL..)",
-                "Windows, Unix, MacOS, bash",
-                "C#, C++, C, WPF, Python, Java, JS",
-                "Network, Asynchronous, Design patterns, SOLID principle",
-                "Versioning UI/console (Git, SVN, Mercurial), JIRA",
+                "Object Oriented, Reactive, Functionnal programming, ECS",
+                "Unity (6+ years), Unreal Engine (basic proficiency)",
+                "JSON, XML, Mongodb, mySQL",
+                "Windows, Unix",
+                "C#, C++, C, WPF, Python, JS",
+                "Network, Asynchronous, Threading, SOLID principles",
+                "Versioning (Git, SVN), JIRA",
                 "Photoshop & Blender (Basics)"
+                //MacOS, bash, Java,"
             ]
         },
         {
@@ -133,8 +85,8 @@ var resume = [{
             "hidden":false,
             "list": [
                 "Problem solving, fast learner",
-                "Project management, Agile/Scrum Method",
-                "UX Practice, Game Design, Game economy",
+                "Project management, Agile Method",
+                "Game Design, Game economy",
                 "French (Native) and English (fluent)"
             ]
         }
@@ -143,17 +95,17 @@ var resume = [{
 {
     "title": "Education",
     "entryList": [{
-            "title": "Master in Computer Sciences – Level 9",
+            "title": "Master in Computing Sciences – Level 9",
             "company":"EPITECH",
             "duration": "2010 – 2015",
             "hidden":false,
             "column": 2,
-            "list": [
-                "Software architectures, C, C++",
-                "Programming design patterns",
-                "Game development",
-                "Project Management"
-            ]
+            // "list": [
+            //     "Software architectures, C, C++",
+            //     "Programming design patterns, Memory management",
+            //     "Game development",
+            //     "Project Management"
+            // ]
         },
         {
             "title": "Griffith College Dublin - (Exchange program)",
@@ -165,16 +117,17 @@ var resume = [{
                 "Business Management"
             ]
         },
-        {
-            "title": "Online courses",
-            "hidden":false,
-            "column": 2,
-            "list": [
-                // "Unity certification, Python (Udemy)",
-                "Shader development, CGProgram (Udemy)",        
-                "Game Design (linkedin Learning)"
-            ]
-        }
+        // {
+        //     "title": "Online courses",
+        //     "hidden":false,
+        //     "column": 2,
+        //     "list": [
+        //         // "Unity certification, Python (Udemy)",
+        //         "Shader development, CGProgram (Udemy)",        
+        //         "Game Design (linkedin Learning)",
+        //         "Unreal Engine"
+        //     ]
+        // }
     ]
 },
 {
@@ -183,7 +136,7 @@ var resume = [{
  //   "column": 1,
     "list": [
         "Game Jams (solo & team): Ludum Dare, Global Game Jam.",
-        "Favorite games : Outer Wilds, The Binding of Isaac, The Legend of Zelda, Celeste, Metal Gear Solid, Rocket league, Bioshock, Overwatch, Apex Legends.",
+        "Favorite games : Outer Wilds, The Legend of Zelda, The Binding of Isaac, Celeste, Metal Gear Solid, Rocket league, Bioshock, Overwatch, Apex Legends.",
         "Interest in Sciences and curiosity for many topics.",
         "Tabletop Roleplaying and board games.",
         "Helped in developing company culture through several events (in office and remote gaming events, game clubs, Roleplay).",
