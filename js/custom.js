@@ -12,7 +12,7 @@ var resume = [{
             "hidden":false,
             "list": [
                 "Sprint planning, prioritization, managing communication with internal and external team.",
-                "Designing and implementing gameplay mechanics."
+                "Designing and implementing gameplay mechanics and game client architecture."
              ]
          },
         {
