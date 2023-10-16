@@ -8,11 +8,11 @@ var resume = [{
         {
             "title": "Lead Game Developer",
             "company":"WarDucks",
-            "duration": "June  2023– Present",
+            "duration": "June 2023 – Present",
             "hidden":false,
             "list": [
-                "Participated in integrating game core mechanics",
-                "Sprint planning, prioritization, Communication with internal and external team.",
+                "Sprint planning, prioritization, managing communication with internal and external team.",
+                "Designing and implementing gameplay mechanics."
              ]
          },
         {
@@ -22,9 +22,9 @@ var resume = [{
            "hidden":false,
            "list": [
                 "Writing specifications and integration of game features (client and server, Unity).",
-                "Lead the UI Architecture and integrations on the project (assigning tasks and integration).",
-                "Built up the technology stack using Noesis (WPF/C# framework), Organized training ",
-                "Lead prototyping and design of the game Wizard Merge."
+                "Lead the UI Architecture and integrations on a 4X Strategy mobile game (assigning tasks and integration).",
+                "Built up the technology stack using WPF/C# framework (Noesis), Organized training.",
+                "Game design and prototyping the game Wizard Merge."
             ]
         },
         {
