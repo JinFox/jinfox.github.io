@@ -12,7 +12,9 @@ var resume = [{
             "hidden":false,
             "list": [
                 "Sprint planning, prioritization, managing communication with internal and external team.",
-                "Designing and implementing gameplay mechanics and game client architecture."
+                "Game design for both existing specification and new game concept.",
+                "Designing and implementing gameplay mechanics and game client architecture.",
+                "Game design and prototyping the game Wizard Merge."
              ]
          },
         {
@@ -22,9 +24,9 @@ var resume = [{
            "hidden":false,
            "list": [
                 "Writing specifications and integration of game features (client and server, Unity).",
-                "Lead the UI Architecture and integrations on a 4X Strategy mobile game (assigning tasks and integration).",
-                "Built up the technology stack using WPF/C# framework (Noesis), Organized training.",
-                "Game design and prototyping the game Wizard Merge."
+                "Led the UI architecture and integration efforts for a 4X Strategy mobile game. (WPF/Noesis)",
+                "Assigned tasks and oversaw integration, ensuring a user-friendly interface.",
+                "Organized training sessions to enhance the team's technical skills.",
             ]
         },
         {
@@ -35,7 +37,7 @@ var resume = [{
             "list": [
                 "Developing internal tools (JS, C#, etc.)",
                 "Troubleshooting integrations (SDKs, REST APIs, etc.)",
-                "High Revenue issue handling and bug management.",
+                "High Revenue issue handling and support.",
             ]
         },
         {
@@ -45,19 +47,20 @@ var resume = [{
             "hidden":false,
             "list": [
                 "Development of Dungeon Monsters on iOS and Android.",
-                "Implementing UI/UX and client mechanics.",
-                "Conceived and developed the game’s server.",
+                "Successfully implemented UI/UX and client core gameplay mechanics for the game.",
+                "Implemented the game server logic (node.js / Parse platform REST API)."
             ]
         },
-        {
-            "title": "Other",
-            "duration": "August 2014 – September 2015",
-            "hidden":false,
-            "list": [
-                "Securiloc Locster - Android Developer Internship - Geolocalisation App",
-                "AAM Communication - Web development",
-            ]
-        },
+        // Old internships
+        // {
+        //     "title": "Other",
+        //     "duration": "August 2014 – September 2015",
+        //     "hidden":false,
+        //     "list": [
+        //         "Securiloc Locster - Android Developer Internship - Geolocalisation App",
+        //         "AAM Communication - Web development",
+        //     ]
+        // },
     ]
 },
 {
@@ -72,11 +75,10 @@ var resume = [{
                 "Unity (6+ years), Unreal Engine (basic proficiency)",
                 "JSON, XML, Mongodb, mySQL",
                 "Windows, Unix",
-                "C#, C++, C, WPF, Python, JS",
-                "Network, Asynchronous, Threading, SOLID principles",
-                "Versioning (Git, SVN), JIRA",
+                "C# (7+ year), C++ (2 year), WPF/XAML, Python, JS",
+                "Networking, Asynchronous, Threading, SOLID principles",
+                "Version control (Git, SVN), JIRA",
                 "Photoshop & Blender (Basics)"
-                //MacOS, bash, Java,"
             ]
         },
         {
@@ -84,10 +86,10 @@ var resume = [{
             "column": 2,
             "hidden":false,
             "list": [
-                "Problem solving, fast learner",
-                "Project management, Agile Method",
+                "Problem solver, fast learner",
+                "Agile, Sprint planning, Project management",
                 "Game Design, Game economy",
-                "French (Native) and English (fluent)"
+                "French (native), English (fluent)"
             ]
         }
     ]
