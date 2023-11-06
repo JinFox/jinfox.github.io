@@ -71,12 +71,12 @@ var resume = [{
             "column": 2,
             "hidden":false,
             "list": [
-                "Object Oriented, Reactive, Functionnal programming, ECS",
+                "Object Oriented, Reactive, Functionnal programming, Data Oriented",
                 "Unity (6+ years), Unreal Engine (basic proficiency)",
                 "JSON, XML, Mongodb, mySQL",
                 "Windows, Unix",
                 "C# (7+ year), C++ (2 year), WPF/XAML, Python, JS",
-                "Networking, Asynchronous, Threading, SOLID principles",
+                "Asynchronous, Threading, Networking, SOLID principles",
                 "Version control (Git, SVN), JIRA",
                 "Photoshop & Blender (Basics)"
             ]
@@ -102,15 +102,15 @@ var resume = [{
             "duration": "2010 – 2015",
             "hidden":false,
             "column": 2,
-            // "list": [
-            //     "Software architectures, C, C++",
-            //     "Programming design patterns, Memory management",
-            //     "Game development",
-            //     "Project Management"
-            // ]
+            "list": [
+                "Software architectures, C, C++",
+                "Design patterns, Memory management",
+                "Game development",
+                "Project Management"
+            ]
         },
         {
-            "title": "Griffith College Dublin - (Exchange program)",
+            "title": "Griffith College Dublin",
             "duration": "2013 – 2014",
             "hidden":false,
             "column": 2,
@@ -137,11 +137,11 @@ var resume = [{
     "title": "Hobbies - Interests",
  //   "column": 1,
     "list": [
-        "Game Jams (solo & team): Ludum Dare, Global Game Jam.",
-        "Favorite games : Outer Wilds, The Legend of Zelda, The Binding of Isaac, Celeste, Metal Gear Solid, Rocket league, Bioshock, Overwatch, Apex Legends.",
-        "Interest in Sciences and curiosity for many topics.",
+        "Favorite games : Outer Wilds, The Legend of Zelda, Celeste, The Binding of Isaac, Metal Gear Solid, Rocket league, Bioshock, Apex Legends.",
         "Tabletop Roleplaying and board games.",
-        "Helped in developing company culture through several events (in office and remote gaming events, game clubs, Roleplay).",
+        "Game Jams (solo & team): Ludum Dare, Global Game Jam.",
+        "Curiosity for many topics (Science, technology, woodworking)",
+        "Contributing to company culture through events organization (physical & remote events, game clubs, TTRPG).",
     ]
 }
 ];
@@ -334,6 +334,8 @@ $('.printFriendly').click(function (e) {
     } 
     
     setPrintFriendly(true);
+    // to remove the ugly link duplicate on print
+    $("a").removeAttr("href");
     window.print();
     setTimeout(() => {  window.location.reload(); }, 10); // reload page after print closed to have the nice print layout
  });
@@ -342,13 +344,13 @@ $('.printFriendly').click(function (e) {
     toggleNerdMode(200);
   });
 
-  $( document ).ready(function() {
+$( document ).ready(function() {
     resume = removeHidden(resume);
     $("#nerdContainer").append("<pre>" + syntaxHighlight(resume) + "</pre>").hide();
     $("#jsonContainer").append(generateResumeFromJson(resume) );
     $(".stamp").each(function() {
         $( this ).fitText();
-      });
+    });
   });
 
 
