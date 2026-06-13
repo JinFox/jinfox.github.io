@@ -1,0 +1,136 @@
+[
+  {
+    "title": "Career",
+    "hidden": false,
+    "entryList": [
+      {
+        "title": "Senior UI Engineer",
+        "company": "Hangar 13",
+        "duration": "March 2024 – Present",
+        "hidden": false,
+        "list": [
+          "UI Architecture and development for Mafia: The Old Country using Unreal Engine and NoesisGUI (WPF/XAML stack).",
+          "Working as part of the UI team to deliver high-quality, immersive user interfaces.",
+          "Collaborating with design and art teams to implement features while ensuring optimal performance."
+        ]
+      },
+      {
+        "title": "Lead Game Developer",
+        "company": "WarDucks",
+        "duration": "June 2023 – March 2024",
+        "hidden": false,
+        "list": [
+          "Sprint planning, prioritization, managing communication with internal and external team.",
+          "Game design for both existing specification and new game concept.",
+          "Designing and implementing gameplay mechanics and game client architecture.",
+          "Game design and prototyping the game Wizard Merge."
+        ]
+      },
+      {
+        "title": "Lead UI Game Developer",
+        "company": "WarDucks",
+        "duration": "May 2019 – June 2023",
+        "hidden": false,
+        "list": [
+          "Writing specifications and integration of game features (client and server, Unity).",
+          "Led the UI architecture and integration efforts for a 4X Strategy mobile game. (WPF/Noesis)",
+          "Assigned tasks and oversaw integration, ensuring a user-friendly interface.",
+          "Organized training sessions to enhance the team's technical skills."
+        ]
+      },
+      {
+        "title": "Global Technical Support Engineer",
+        "company": "PayPal",
+        "duration": "November 2015 – May 2019",
+        "hidden": false,
+        "list": [
+          "Developing internal tools (JS, C#, etc.)",
+          "Troubleshooting integrations (SDKs, REST APIs, etc.)",
+          "High Revenue issue handling and support."
+        ]
+      },
+      {
+        "title": "Unity Game developer (Client and Server side)",
+        "company": "ManaCube",
+        "duration": "August 2014 – September 2015",
+        "hidden": false,
+        "list": [
+          "Development of Dungeon Monsters on iOS and Android.",
+          "Successfully implemented UI/UX and client core gameplay mechanics for the game.",
+          "Implemented the game server logic (node.js / Parse platform REST API)."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Skills",
+    "hidden": false,
+    "entryList": [
+      {
+        "title": "Technical",
+        "column": 2,
+        "hidden": false,
+        "list": [
+          "Object Oriented, Reactive, Functionnal programming, Data Oriented",
+          "Unity (6+ years), Unreal Engine (basic proficiency)",
+          "JSON, XML, Mongodb, mySQL",
+          "Windows, Unix",
+          "C# (7+ year), C++ (2 year), WPF/XAML, Python, JS",
+          "Asynchronous, Threading, Networking, SOLID principles",
+          "Version control (Git, SVN), JIRA",
+          "Photoshop & Blender (Basics)"
+        ]
+      },
+      {
+        "title": "Other skills - Language",
+        "column": 2,
+        "hidden": false,
+        "list": [
+          "Problem solver, fast learner",
+          "Agile, Sprint planning, Project management",
+          "Game Design, Game economy",
+          "French (native), English (fluent)"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Education",
+    "entryList": [
+      {
+        "title": "Master in Computing Sciences – Level 9",
+        "company": "EPITECH",
+        "duration": "2010 – 2015",
+        "hidden": false,
+        "column": 2,
+        "list": [
+          "Software architectures, C, C++",
+          "Design patterns, Memory management",
+          "Game development",
+          "Project Management"
+        ]
+      },
+      {
+        "title": "Griffith College Dublin",
+        "duration": "2013 – 2014",
+        "hidden": false,
+        "column": 2,
+        "list": [
+          "Computing Science",
+          "Business Management"
+        ]
+      }
+    ]
+  },
+  {
+    "hidden": false,
+    "title": "Hobbies - Interests",
+    "list": [
+      "Favorite games : Outer Wilds, The Legend of Zelda, Celeste, The Binding of Isaac, Metal Gear Solid, Rocket league, Bioshock, Apex Legends.",
+      "Tabletop Roleplaying and board games.",
+      "Game Jams (solo & team): Ludum Dare, Global Game Jam.",
+      "Curiosity for many topics (Science, technology, woodworking)",
+      "Contributing to company culture through events organization (physical & remote events, game clubs, TTRPG)."
+    ]
+  }
+]
