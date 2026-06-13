@@ -5,16 +5,20 @@ GENERAL
 =====================
 */
 :root {
-  --primary: #FEDA6A;
-  --secondary: #528DC4;
-  --secondaryLight: #629DD4;
+/* Main Accents */
+  --primary: #FEDA6A;          /* A punchier, highly visible cyber yellow */
+  --secondary: #9B5DE5;        /* Vibrant, rich violet (replaces the flat blue) */
+  --secondaryLight: #F15BB5;   /* Electric neon pink for secondary highlights */
   
-  --grey:#D4D4DC;
-  --darkGrey:#393F4D;
-  --white:#f5f5f5;
-  --black:#1D1E22;
-  --textGrey:#D4D4DC;
-  --textWhite:#e5e5e5;
+  /* Deep, Moody Neutrals (Instead of dusty grays) */
+  --black: #0B0C10;            /* Deep obsidian black for the body background */
+  --darkGrey: #1F2833;         /* Saturated slate-charcoal for cards & masonry boxes */
+  --grey: #45A29E;             /* Cool, metallic dark teal for borders and divider lines */
+  
+  /* Typography Colors */
+  --white: #F3F4F6;            /* Crisp, modern off-white for crisp headers */
+  --textWhite: #E5E7EB;        /* Soft white for highly readable body copy */
+  --textGrey: #9CA3AF;         /* Muted gray-lavender for secondary text / captions */
 }
 
 
@@ -22,6 +26,13 @@ html,
 body {
   overflow-x: hidden;
   /* Prevent scroll on narrow devices */
+}
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--textWhite); /* Ensures body text isn't blacked out */
+  background-color: var(--black);
 }
 header {
   z-index: 1000;
@@ -33,17 +44,17 @@ section {
   padding-bottom: 90px;
 }
 section.background-gray-lighter {
-  background: #cdcdcd;
+  background: #151B26; /* Deep dark slate blue */
 }
 section.background-gray-lightest {
-  background: #f7f7f7;
-  border-top: solid 1px #cdcdcd;
-  border-bottom: solid 1px #cdcdcd;
+  background: #1A222F; 
+  border-top: solid 1px var(--darkGrey);
+  border-bottom: solid 1px var(--darkGrey);
 }
 section.background-secondary {
-  background: #4fb0c6;
-  border-top: solid 1px #2b7484;
-  border-bottom: solid 1px #2b7484;
+  background: var(--darkGrey);
+  border-top: solid 1px var(--secondary);
+  border-bottom: solid 1px var(--secondary);
 }
 .section-inverse {
   color: #fff;
@@ -402,8 +413,12 @@ SIDEBAR + RIGHT COLUMN
   padding-top: 40px;
 }
 .content-column.white-background {
-  background: #393F4D;
+  background: var(--black); /* Uses your deep obsidian color */
   min-height: 100vh;
+  
+  /* Added features for visual depth */
+  border-left: 1px solid rgba(255, 255, 255, 0.05); /* Soft vertical separator if it's next to a sidebar */
+  transition: background 0.3s ease;
 }
 .grid {
   padding-top: 5px;
@@ -874,18 +889,17 @@ a:active {
   margin-left: -15px;
 }
 .box-masonry {
-  background: var(--darkGrey);/*#fff;*/
+  background: var(--darkGrey);
   margin-bottom: 30px;
   position: relative;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Deepened shadow for high contrast */
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08); /* Crisp edge highlight */
 }
+
 .box-masonry h4 {
   font-size: 18px;
   line-height: 1.3;
@@ -903,12 +917,12 @@ a:active {
   text-decoration: none;
 }
 .box-masonry .box-masonry-text {
-  padding: 20px;
+  padding: 15px 20px 15px;
 }
 .box-masonry .box-masonry-text p {
   color: var(--textGrey);
   font-size: 13px;
-  line-height: 1.5;
+  line-height: 1.2;
   opacity: 0.8;
 }
 
@@ -955,9 +969,9 @@ button.linkbtn{
   color: #555555;
   font-size: 50px;
 }
+/* Make the hover effect feel alive with a slight neon tint */
 .box-masonry:hover {
-  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-  transform: translateY(-8px) scale(1.02);
+  transform: translateY(8px) scale(1.02);
   z-index: 10;
 }
 .box-masonry:hover .box-masonry-hover-text-header {
@@ -966,11 +980,8 @@ button.linkbtn{
 .box-masonry:hover .box-masonry-hover-center {
   opacity: 1;
 }
-.box-masonry:hover .img-responsive {
-  transform: scale(1.1);
-}
 .box-masonry:hover .box-masonry-image.with-hover-overlay:before {
-  opacity: 0.6;
+  opacity: 0.85;
 }
 .box-masonry:hover .box-masonry-image.with-hover-icon:after {
   opacity: 0.7;
@@ -2239,66 +2250,66 @@ a.list-group-item.active > .badge,
   object-position: center 10%;
 }
 
-.releasedProject2 {
- 
-  position: relative;
-  margin-bottom: 30px;
-
-  box-shadow: 0 0 10px var(--secondary);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-radius: 0.5em;
+.releasedProject {
+  background: rgba(31, 40, 51, 0.65); /* Translucent darkGrey */
+  backdrop-filter: blur(12px);         /* Frosty glass effect */
+  border-radius: 12px;
   
-  border:5px solid black;
-  min-height: 3em;
-  background: var(--secondary);/*#fff;*/
-  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 15s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23ff00ff' /%3E%3Cstop offset='25%25' stop-color='%23FEDA6A' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
+  /* A microscopic, semi-transparent yellow border that looks like milled glass */
+  border: 1px solid rgba(255, 222, 77, 0.25); 
+  
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 
-.releasedProject {
-  /* background: var(--primary); */
+.releasedProject:hover {
+  box-shadow: 
+    0 0 2px rgba(255, 222, 77, 1),
+    0 5px 5px rgba(0, 0, 0, 0.6),
+    0 0 15px rgba(255, 222, 77, 0.45);
+  border-color: rgba(255, 222, 77, 0.6); /* Lights up slightly on hover */
+  background: rgba(31, 40, 51, 0.8);
+ 
+}
+
+/* .releasedProject {
+   background: var(--primary); 
   
   box-shadow: 0 0 5px var(--primary);
   border-radius: 0.5em;
   border: var(--primary) 5px solid;
-}
-
-.stamp{
-  width: 160px;
-  background: var(--primary);
+} */
+.stamp {
+  /* Positioning & Sizing */
   position: absolute;
-  padding: 0px 40px;
-  text-align: center;
+  top: 20px;
+  right: -45px;
+  width: 160px;
+  padding: 4px 0; /* Vertical padding instead of horizontal */
   
-  text-size-adjust: auto;
-  font-weight: 800;
-  text-transform: uppercase;
-  line-height: 24px;
-  letter-spacing: 0.05rem;
-
+  /* Typography & Colors */
+  background: var(--primary);
   color: var(--black);
-  overflow: hidden;
-  /* top: 18px; */
-  top: 15px;
-  right: -50px;
-  left: auto;
+  font-size: 1.2rem; /* Explicit, crisp size for labels */
+  font-weight: 700; /* Slightly bolder for readability at small sizes */
+  text-transform: uppercase;
+  letter-spacing: 0.08em; /* Slightly wider tracking for that premium look */
+  text-align: center;
+  line-height: 1.5;
+
+  /* Rotation */
   transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  
+  /* Visual Polish */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Softer, more modern shadow */
+  backdrop-filter: blur(5px); /* Optional: nice effect if it overlaps images */
+  
+  /* Critical for preventing text selection glitches */
+  pointer-events: none; 
+  user-select: none;
 }
 
 .stamp.blueStamp{
   background: var(--secondary);
   color: var(--white);
 }
-
-/* .box-masonry:hover .stamp{
-  opacity: 0.3;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-} */

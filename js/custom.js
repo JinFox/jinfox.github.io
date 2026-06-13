@@ -25,7 +25,14 @@ function setPrintFriendly()
     $(".printFriendly").hide();
     $(".nerdMode").hide();
     $(".white-background").css({ 'width': '100%' });
-        
+     // Quick scale down of the entire body text
+   
+    // Inject print-specific CSS to scale down text
+   $(".resumeSection h4").css("font-size", "14px"); // Target the main job titles
+    $(".resumeSection h5").css("font-size", "12px"); // Target the sub-roles
+    $(".resumeSection li").css("font-size", "11px"); // Target the bullet points
+    $(".resumeDuration").css("font-size", "10px");   // Target the dates
+    $("body, .white-background").css("font-size", "11px");
 }
 
 function removeHidden(json)

@@ -9,9 +9,10 @@
         "duration": "March 2024 – Present",
         "hidden": false,
         "list": [
-          "UI Architecture and development for Mafia: The Old Country using Unreal Engine and NoesisGUI (WPF/XAML stack).",
-          "Working as part of the UI team to deliver high-quality, immersive user interfaces.",
-          "Collaborating with design and art teams to implement features while ensuring optimal performance."
+          "Architected and implemented scalable UI systems for a AAA title (Mafia: The Old Country) using Unreal Engine and NoesisGUI.",
+          "Engineered reusable UI components and custom controls to ensure seamless design integration.",
+          "Collaborated with design and art teams to translate UX wireframes into features while optimizing performance.",
+          "Managed and mentored a direct report developer, providing technical guidance, code reviews, and support for their professional growth."
         ]
       },
       {
@@ -20,10 +21,9 @@
         "duration": "June 2023 – March 2024",
         "hidden": false,
         "list": [
-          "Sprint planning, prioritization, managing communication with internal and external team.",
-          "Game design for both existing specification and new game concept.",
-          "Designing and implementing gameplay mechanics and game client architecture.",
-          "Game design and prototyping the game Wizard Merge."
+          "Spearheaded sprint planning, prioritization, and managed communication with internal and external teams.",
+          "Designed and implemented gameplay mechanics and game client architecture.",
+          "Designed and prototyped the game Wizard Merge."
         ]
       },
       {
@@ -32,7 +32,7 @@
         "duration": "May 2019 – June 2023",
         "hidden": false,
         "list": [
-          "Writing specifications and integration of game features (client and server, Unity).",
+          "Wrote specifications and integrated game features (client and server, Unity).",
           "Led the UI architecture and integration efforts for a 4X Strategy mobile game. (WPF/Noesis)",
           "Assigned tasks and oversaw integration, ensuring a user-friendly interface.",
           "Organized training sessions to enhance the team's technical skills."
@@ -44,9 +44,9 @@
         "duration": "November 2015 – May 2019",
         "hidden": false,
         "list": [
-          "Developing internal tools (JS, C#, etc.)",
-          "Troubleshooting integrations (SDKs, REST APIs, etc.)",
-          "High Revenue issue handling and support."
+          "Developed internal tools (JS, C#, etc.).",
+          "Troubleshot integrations (SDKs, REST APIs, etc.).",
+          "Acted as a critical escalation point for high-revenue clients, diagnosing and resolving complex technical issues."
         ]
       },
       {
@@ -55,8 +55,8 @@
         "duration": "August 2014 – September 2015",
         "hidden": false,
         "list": [
-          "Development of Dungeon Monsters on iOS and Android.",
-          "Successfully implemented UI/UX and client core gameplay mechanics for the game.",
+          "Developed Dungeon Monsters on iOS and Android.",
+          "Implemented UI/UX and client core gameplay mechanics (Unity).",
           "Implemented the game server logic (node.js / Parse platform REST API)."
         ]
       }
@@ -71,11 +71,11 @@
         "column": 2,
         "hidden": false,
         "list": [
-          "Object Oriented, Reactive, Functionnal programming, Data Oriented",
-          "Unity (6+ years), Unreal Engine (basic proficiency)",
+          "Object Oriented, Reactive, Functional programming, Data Oriented",
+          "Unreal Engine, Unity, NoesisGUI (WPF/XAML)",
           "JSON, XML, Mongodb, mySQL",
           "Windows, Unix",
-          "C# (7+ year), C++ (2 year), WPF/XAML, Python, JS",
+          "C# (7+ years), C++ (4+ years),  Python, JS, Lua, Rust (notions)",
           "Asynchronous, Threading, Networking, SOLID principles",
           "Version control (Git, SVN), JIRA",
           "Photoshop & Blender (Basics)"
@@ -126,8 +126,8 @@
     "hidden": false,
     "title": "Hobbies - Interests",
     "list": [
-      "Favorite games : Outer Wilds, The Legend of Zelda, Celeste, The Binding of Isaac, Metal Gear Solid, Rocket league, Bioshock, Apex Legends.",
-      "Tabletop Roleplaying and board games.",
+      "Favorite games : Outer Wilds, The Legend of Zelda, The Binding of Isaac, Rocket league, Bioshock, Deadlock",
+      "Tabletop Roleplaying and board games (both as Game Master and player).",
       "Game Jams (solo & team): Ludum Dare, Global Game Jam.",
       "Curiosity for many topics (Science, technology, woodworking)",
       "Contributing to company culture through events organization (physical & remote events, game clubs, TTRPG)."
